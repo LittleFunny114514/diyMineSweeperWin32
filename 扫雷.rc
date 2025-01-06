@@ -1,0 +1,118 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "icon.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SETTINGS DIALOGEX 0, 0, 114, 171
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 12, "等线", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,8,150,45,14
+    PUSHBUTTON      "取消",IDCANCEL,55,150,46,14
+    LTEXT           "种子 (DWORD)",IDC_STATIC_SEED,8,9,60,8
+    LTEXT           "地雷密度 (反比)",IDC_STATIC_MINE,8,23,60,8
+    EDITTEXT        IDC_TEXTBOX_SEED,60,7,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXTBOX_MINE,60,21,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TEXTBOX_WIDTH,60,35,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TEXTBOX_HEIGHT,60,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TEXTBOX_BLOCK_SIZE,60,61,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "雷区长度",IDC_STATIC_WITH,8,36,52,8
+    LTEXT           "雷区宽度",IDC_STATIC_HEIGHT,8,50,52,8
+    LTEXT           "块大小 (像素)",IDC_STATIC_BLOCK_SIZE,8,63,52,8
+    CONTROL         "延迟 (理论上均摊性能开销)",IDC_CHECK_DELAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,76,100,10
+    LTEXT           "DWORD范围就是三十二位无符号整数范围 (0~4294967295)，这个程序在雷区极大时开销非常大，且理论上格子数量超过32767就会立刻崩溃",IDC_STATIC_TIP,9,108,94,40
+    CONTROL         "经典判定 (不使用旗子判定)",IDC_CHECK_CLASSIC_DETECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,87,100,10
+    CONTROL         "经典生成 (固定地雷的数量)",IDC_CHECK_CLASSIC_GEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,98,100,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 107
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_SETTINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
